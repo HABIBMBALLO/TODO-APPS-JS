@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="./script.js"></script>
+</head>
+<body>
+  <div class="background-image">
+      <img src="images/bg-desktop-dark.jpg" alt="">
+  </div>  
+  <div class="container">
+    <div class="header">
+      <div class="title">
+        PHAME
+      </div>
+      <div class="theme">
+        <img src="images/icon-sun.svg" alt="icon-sun">     
+      </div>
+    </div>
+    <div class="new-todo">
+      <div class="check">
+        <div class="check-mark">
+        </div>
+      </div>
+      <div class="new-todo-input">
+        <form onsubmit="addItem(event)">
+          <input id="todo-input" type="text" placeholder="Create a new">
+        </form>
+      </div>
+    </div>
+    <div class="todo-items-wrapper">
+      <div class="todo-items">
+        <div class="todo-item">
+          <div class="check">
+            <div class="check-mark">
+              <img src="images/icon-check.svg" alt="">
+            </div>
+          </div>
+          <div class="todo-text">
+            Cut the lawn
+          </div>
+        </div>
+        <div class="todo-item">
+          <div class="check">
+            <div class="check-mark">
+              <img src="images/icon-check.svg" alt="">
+            </div>
+          </div>
+          <div class="todo-text">
+            Cut the lawn
+          </div>
+        </div>
+        <div class="todo-item">
+          <div class="check">
+            <div class="check-mark">
+              <img src="images/icon-check.svg" alt="">
+            </div>
+          </div>
+          <div class="todo-text">
+            Cut the lawn
+          </div>
+        </div>
+      </div>
+      <div class="todo-items-info">
+        <div class="items-left">
+          5 items left
+        </div>
+        <div class="items-startuses">
+          <span>ALL</span>
+          <span>ACTIVE</span>
+          <span>COMPLETED</span>
+        </div>
+        <div class="items-clear">
+          <span>CLEAR COMPLETED</span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
