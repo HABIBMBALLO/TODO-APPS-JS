@@ -148,4 +148,25 @@ align-items: center;
     align-items: center;
 }
 
-/* .item-sta */
+.items-statuses {
+    display: flex;
+    justify-content: center;
+}
+
+.items-statuses span {
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.items-statuses:hover {
+    color: hsl(220, 98%, 61%);
+}
+
+.items-statuses span:hover, .items-statuses span.active, .items-clear:hover{
+    color: hsl(220, 98%, 61%);   
+}
+ 
+/* .items-clear {
+   cursor: pointer;
+   //tex t-align: end; 
+} */
